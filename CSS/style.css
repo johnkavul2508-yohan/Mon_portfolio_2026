@@ -5,7 +5,33 @@
     --gris-foncé: #666;
     --gris-tres-clair: #F8F8F8;
     --gris-clair: #EEE;
+    --gris-tres-foncé: #333;
+    --noir:#0000;
 }
-h1 {
-    color: var(--voilet-foncé);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body {
+    background-color:  var(--gris-tres-clair);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: white;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.200);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+header div a {
+    text-decoration: none;
+    font-size: 2.2rem ;
+    font-weight: hold;
+    color: navy;
 }
