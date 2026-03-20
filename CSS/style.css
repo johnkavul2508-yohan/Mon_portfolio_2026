@@ -15,12 +15,12 @@
 }
 body {
     background-color:  var(--gris-tres-clair);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
 }
 header {
     background-color: white;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.200);
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.02);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -33,5 +33,51 @@ header div a {
     text-decoration: none;
     font-size: 2.2rem ;
     font-weight: hold;
-    color: navy;
+    color: var(--voilet-foncé);
+}
+
+ul li {
+    list-style: none;
+    margin: 25px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--gris-tres-foncé);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li a:hover {
+    color: var(--voilet-foncé);
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--voilet-foncé);
+    transition: width 0.3s ease-in-out
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+a.active {
+    color: var(--voilet-foncé);
+    font-weight: 600;
+}
+
+a.active::after {
+    width: 100%;
 }
