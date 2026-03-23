@@ -6,7 +6,7 @@
     --gris-tres-clair: #F8F8F8;
     --gris-clair: #EEE;
     --gris-tres-foncé: #333;
-    --noir:#0000;
+    --noir:#000000;
 }
 *{
     margin: 0;
@@ -33,7 +33,7 @@ header div a {
     text-decoration: none;
     font-size: 2.2rem ;
     font-weight: hold;
-    color: var(--voilet-foncé);
+    color: navy;
 }
 
 ul li {
@@ -55,7 +55,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: var(--voilet-foncé);
+    color: navy;
 }
 
 ul li a::after {
@@ -65,7 +65,7 @@ ul li a::after {
     bottom: 0;
     height: 3px;
     width: 0%;
-    background-color: var(--voilet-foncé);
+    background-color: navy;
     transition: width 0.3s ease-in-out
 }
 
@@ -74,10 +74,60 @@ ul li a:hover::after {
 }
 
 a.active {
-    color: var(--voilet-foncé);
+    color: navy;
     font-weight: 600;
 }
 
 a.active::after {
     width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    margin: 10rem 2rem;
+}
+
+.hero img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 200px;
+    border: 8px solid navy
+
+}
+
+.hero h1 {
+    color: navy;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.hero p {
+    color: var(--gris-tres-foncé);
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.hero a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease-in-out
+}
+
+.hero a:hover {
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-3px);
 }
